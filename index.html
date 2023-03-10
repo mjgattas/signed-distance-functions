@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My p5.js Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="sketch.js"></script>
+
+    <script src="ccapture.js-master/src/CCapture.js"></script>
+    <script src="ccapture.js-master/src/webm-writer-0.2.0.js"></script>
+    <script src="ccapture.js-master/src/download.js"></script>
+
+    <script>
+      var capturer = new CCapture({
+        format: 'webm',
+        framerate: 30,
+        verbose: true,
+    })
+    </script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Expires" content="0">
+  </head>
+  <body>
+    <div id="sketch-holder"></div>
+  </body>
+</html>
